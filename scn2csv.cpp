@@ -8,7 +8,7 @@ string lineSplit(string line, int pos){
     if (line.length() >= 14){
         switch(pos) {
             case 1:
-                return line.substr(0,1) + "." + line.substr(1,4);
+                return line.substr(0,4) + "." + line.substr(4,1);
                 break;
             case 2:
                 if (line.substr(6,1) == "-"){
